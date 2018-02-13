@@ -6,3 +6,5 @@ publish:
 		npm publish
 lint:
 		npm run eslint .
+even:
+		npm run babel-node -- src/bin/brain-even.js
