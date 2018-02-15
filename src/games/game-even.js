@@ -1,14 +1,18 @@
 import { cons } from 'hexlet-pairs';
-import { getNumRandom } from '..';
+import { letsPlay, getNumRandom } from '..';
 
 const isNumEven = num => (num % 2 === 0 ? 'yes' : 'no');
 
+const gameRules = 'Answer "yes" if number even otherwise answer "no".';
+const quantity = 3;
+
 const evenGame = () => {
   const question = getNumRandom(1, 15);
-  // let answer = 'yes';
   const answer = isNumEven(question);
   const res = cons(question, answer);
   return res;
 };
 
-export default evenGame;
+const playEven = () => letsPlay(evenGame, gameRules, quantity);
+
+export default playEven;

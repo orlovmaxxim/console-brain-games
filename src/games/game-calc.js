@@ -1,5 +1,8 @@
 import { cons } from 'hexlet-pairs';
-import { getNumRandom } from '..';
+import { letsPlay, getNumRandom } from '..';
+
+const gameRules = 'What is the result of the expression?';
+const quantity = 3;
 
 const calcGame = () => {
   const firstNumber = getNumRandom(1, 15);
@@ -26,4 +29,6 @@ const calcGame = () => {
   return res;
 };
 
-export default calcGame;
+const playCalc = () => letsPlay(calcGame, gameRules, quantity);
+
+export default playCalc;
