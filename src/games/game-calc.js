@@ -2,7 +2,6 @@ import { cons } from 'hexlet-pairs';
 import { letsPlay, getNumRandom } from '..';
 
 const gameRules = 'What is the result of the expression?';
-const quantity = 3;
 
 const calcGame = () => {
   const firstNumber = getNumRandom(1, 15);
@@ -29,6 +28,6 @@ const calcGame = () => {
   return res;
 };
 
-const playCalc = () => letsPlay(calcGame, gameRules, quantity);
+const playCalc = () => letsPlay(calcGame, gameRules);
 
 export default playCalc;

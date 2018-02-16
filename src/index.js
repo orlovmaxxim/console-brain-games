@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
 
+const quantityQuestions = 3;
+
 export const questionFirstName = () => readlineSync.question('May I have your name?');
 
 export const answer = () => readlineSync.question('Your answer: ');
@@ -9,7 +11,7 @@ export const getNumRandom = (min, max) => Math.floor((Math.random() * (max - min
 
 export const isNumEven = num => (num % 2 === 0 ? 'yes' : 'no');
 
-export const letsPlay = (questionAndAnswer, game, quantityQuestions) => {
+export const letsPlay = (questionAndAnswer, game) => {
   console.log(`Welcome to the Brain Games!\n${game}\n`);
   const gamerName = questionFirstName();
   console.log(`Hello, ${gamerName}!\n`);

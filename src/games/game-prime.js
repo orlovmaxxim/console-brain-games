@@ -2,7 +2,6 @@ import { cons } from 'hexlet-pairs';
 import { letsPlay, getNumRandom } from '..';
 
 const gameRules = 'Is this number prime?';
-const quantity = 3;
 
 const isNumPrime = (questionNum) => {
   const iterator = (counter, acc) => {
@@ -24,6 +23,6 @@ const primeGame = () => {
   return res;
 };
 
-const playPrime = () => letsPlay(primeGame, gameRules, quantity);
+const playPrime = () => letsPlay(primeGame, gameRules);
 
 export default playPrime;

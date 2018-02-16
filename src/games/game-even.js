@@ -4,7 +4,6 @@ import { letsPlay, getNumRandom } from '..';
 const isNumEven = num => (num % 2 === 0 ? 'yes' : 'no');
 
 const gameRules = 'Answer "yes" if number even otherwise answer "no".';
-const quantity = 3;
 
 const evenGame = () => {
   const question = getNumRandom(1, 15);
@@ -13,6 +12,6 @@ const evenGame = () => {
   return res;
 };
 
-const playEven = () => letsPlay(evenGame, gameRules, quantity);
+const playEven = () => letsPlay(evenGame, gameRules);
 
 export default playEven;

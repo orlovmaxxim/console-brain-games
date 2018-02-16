@@ -2,7 +2,6 @@ import { cons } from 'hexlet-pairs';
 import { letsPlay, getNumRandom } from '..';
 
 const gameRules = 'What number is missing in this progression?';
-const quantity = 3;
 
 const makeProgression = (start, step, lengthProgression = 10) => {
   const iterator = (counter, acc) => {
@@ -31,6 +30,6 @@ const progressionGame = () => {
   return res;
 };
 
-const playProgression = () => letsPlay(progressionGame, gameRules, quantity);
+const playProgression = () => letsPlay(progressionGame, gameRules);
 
 export default playProgression;

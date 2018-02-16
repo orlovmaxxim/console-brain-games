@@ -2,7 +2,6 @@ import { cons } from 'hexlet-pairs';
 import { letsPlay, getNumRandom } from '..';
 
 const gameRules = 'Balance the given number.';
-const quantity = 3;
 
 const sum = (nums) => {
   let res = 0;
@@ -49,6 +48,6 @@ const balanceGame = () => {
   return res;
 };
 
-const playBalance = () => letsPlay(balanceGame, gameRules, quantity);
+const playBalance = () => letsPlay(balanceGame, gameRules);
 
 export default playBalance;
